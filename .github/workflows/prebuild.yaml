@@ -58,7 +58,7 @@ jobs:
             -v "$PWD":/workspace \
             -w /workspace \
             -e CANVAS_VERSION_TO_BUILD=${{ matrix.canvas_tag }} \
-            chearon/canvas-prebuilt:7 \
+            chearon/canvas-prebuilt:8 \
             bash -c "
               echo 'Container environment:' && \
               cat /etc/os-release || cat /etc/*release && \
